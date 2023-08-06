@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&family=PT+Serif&family=Raleway:wght@100&family=Roboto:wght@100;300;900&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 80px;
+  padding: 15px 20px 0 20px;
+  font-family: 'Varela Round', sans-serif;
+
+  .wrapper {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 600;
+      gap: 3px;
+
+      .link {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .items {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: bolder;
+        color: #104210;
+        gap: 2px;
+        padding-right: 25px;
+      }
+    }
+
+    
+    .mid {
+      .item {
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        border-radius: 20px;
+        padding: 8px;
+        gap: 10px;
+
+        .input {
+          width: 20vw;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          flex: 1;
+          font-size: 16px;
+          color: #333;
+          margin-left: 8px;
+        }
+
+        .searchIcon {
+          color: #333;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+
+      .icons {
+        display: flex;
+        gap: 26px;
+        color: gray;
+        cursor: pointer;
+
+        span {
+          font-size: 12px;
+          font-weight: bold;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: rgb(68, 107, 205);
+          color: white;
+          position: absolute;
+          right: -10px;
+          top: -10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .wrapper {
+    padding: 0 10px;
+  }
+
+  .navbar .left .items {
+    font-size: 20px;
+  }
+
+  .navbar .right .icons {
+    gap: 20px;
+  }
+}
